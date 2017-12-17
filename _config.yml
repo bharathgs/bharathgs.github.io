@@ -7,8 +7,8 @@ permalink:        pretty
 #relative_permalinks: false
 
 # Setup
-title:             Mler
-tagline:          'Personal blog'
+title:             Cognition
+tagline:          'No free lunch'
 description:      'Data science and Machine learning'
 #url:              http://bharathgs.github.io/hyde/
 baseurl:           https://bharathgs.github.io/
