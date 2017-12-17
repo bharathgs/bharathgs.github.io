@@ -7,7 +7,7 @@ permalink:        pretty
 #relative_permalinks: false
 
 # Setup
-title:            MachineLearner
+title:             MachineLearner
 tagline:          'Personal blog'
 description:      'Data science and Machine learning'
 #url:              http://bharathgs.github.io/hyde/
