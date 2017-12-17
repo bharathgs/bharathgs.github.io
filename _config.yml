@@ -7,9 +7,9 @@ permalink:        pretty
 #relative_permalinks: false
 
 # Setup
-title:            Hyde
-tagline:          'A test Blog'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+title:            MachineLearner
+tagline:          'Personal blog'
+description:      'Data science and Machine learning'
 #url:              http://bharathgs.github.io/hyde/
 baseurl:          http://bharathgs.github.io/
 
@@ -23,4 +23,4 @@ paginate:         5
 version:          2.1.0
 
 github:
-  repo:           https://github.com/bharathgs/hyde
+  repo:           https://github.com/bharathgs/
