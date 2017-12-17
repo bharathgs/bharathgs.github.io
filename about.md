@@ -3,28 +3,24 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+I'm bharath, an Independent researcher in Artificial intelligence. Currently I work as a Machine learning engineer at voyagenius labs in mysore. Before that I used to work at  predictive research in bangalore as a data consultant, and I completed my B.Tech in electronics and communication engineering at visvesvaraya technological university. I'm from mysore, India.
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+You can Connect with me via:
 
-There are currently two themes built on Poole:
+1. [linkedin](https://www.linkedin.com/in/xenomorph/)
+2. [twitter](https://twitter.com/bharathjarvis)
+3. [github](github.com/bharathgs)
+4. [angellist](https://angel.co/bharath-gs)
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+You can call me a data geek. I like to dive in and try to find creative ways to solve problems.As of now, I'm trying to address the issue of fairness in algorithms that we design, or more succinctly on "how to make our algorithms fair", along with this my research areas of interest include deep learning, reinforcement learning, cognitive neuroscience and Bayesian statistics.
+I'm also passionate about block-chains, decentralized apps & opensource software and to that end I've been working as a core collaborator on a very interesting project with the openmined organization that aims to provide encrypted, decentralized  deep learning. you can check that out [here](github.com/OpenMined)
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+some of the opensource projects that I contribute to are: 
 
-## Setup
+1. [Pysyft](https://github.com/OpenMined/PySyft): Encrypted, Decentralized Deep Learning library.
+2. [OpenMined-Unity](https://github.com/OpenMined/OpenMined): The OpenMined Unity Application.
+3. [Parfit](https://github.com/jmcarpenter2/parfit): A package for parallelizing the fit and flexibly scoring of sklearn machine learning models, with optional plotting routines.
 
-Some fun facts about the setup of this project include:
 
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
+I am interested in applying ML to solve the most pressing problems we face today.
 
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
