@@ -11,7 +11,7 @@ title:            Hyde
 tagline:          'A test Blog'
 description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
 #url:              http://bharathgs.github.io/hyde/
-baseurl:          http://bharathgs.github.io/hyde/
+baseurl:          https://bharathgs.github.io/hyde/
 
 author:
   name:           'Bharath G.S'
