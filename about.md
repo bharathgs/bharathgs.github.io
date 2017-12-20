@@ -13,7 +13,7 @@ You can Connect with me via:
 4. [angellist](https://angel.co/bharath-gs)
 
 You can call me a data geek. I like to dive in and try to find creative ways to solve problems.As of now, I'm trying to address the issue of fairness in algorithms that we design, or more succinctly on "how to make our algorithms fair", along with this my research areas of interest include deep learning, reinforcement learning, cognitive neuroscience and Bayesian statistics.
-I'm also passionate about block-chains, decentralized apps & opensource software and to that end I've been working as a core collaborator on a very interesting project with the openmined organization that aims to provide encrypted, decentralized  deep learning. you can check that out [here](github.com/OpenMined)
+I'm also passionate about block-chains, decentralized apps & opensource software and to that end I've been working as a collaborator on a very interesting project with the openmined organization that aims to provide encrypted, decentralized  deep learning. you can check that out [here](github.com/OpenMined)
 
 some of the opensource projects that I contribute to are: 
 
