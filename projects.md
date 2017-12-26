@@ -13,6 +13,10 @@ The goal of this library is to give the user the ability to efficiently train De
 ### The OpenMined Unity Application.
 OpenMined Unity Application applies the PySyft library into a Unity Application, and lets you do encrypted deep learning on Playstation4 or Xbox's!
 
+## [dframeutils](https://github.com/bharathgs/dframeutils)
+### simple utility tools for dataframes in Python
+dframeutils is a simple library with many utility functions designed to be used with the pandas dataframe.
+
 ## [Parfit](https://github.com/jmcarpenter2/parfit)
 ### Hyperparameter optimization library
 
