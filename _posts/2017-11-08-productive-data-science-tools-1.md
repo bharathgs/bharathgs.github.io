@@ -182,7 +182,7 @@ For example, we can use "w" to jump to the next word and "b" to jump back one wo
 
 ## Resources:
 
-* [tmux: Productive Mouse-Free Development](http://pragprog.com/book/bhtmux/tmux)
+* [tmux: Productive Mouse-Free Development.](http://pragprog.com/book/bhtmux/tmux)
 * [How to reorder windows](http://superuser.com/questions/343572/tmux-how-do-i-reorder-my-windows)
 * [Tmux official github repo](https://github.com/tmux/tmux/wiki)
 * [essential tmux cheatsheet as a gist](https://gist.github.com/MohamedAlaa/2961058)
