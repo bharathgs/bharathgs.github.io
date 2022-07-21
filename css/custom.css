@@ -36,3 +36,21 @@ body {
   text-align: center;
 
 }
+
+.inline{
+  display: inline;
+}
+
+.tooltip:hover::before {
+  background: #FF4949;
+  color:#fff;
+  content:attr(rel);
+  display:block;
+  margin-top:-42px;
+  position:absolute;
+  white-space:nowrap;
+ }
+
+.a{
+  text-decoration: none;
+}
