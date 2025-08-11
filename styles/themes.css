@@ -1,0 +1,35 @@
+/* Theme Variables */
+:root {
+    --bg-color: #000;
+    --text-color: #fff;
+    --secondary-color: #888;
+    --accent-color: #4A90E2;
+    --geometric-opacity: 0.08;
+}
+
+[data-theme="light"] {
+    --bg-color: #fff;
+    --text-color: #333;
+    --secondary-color: #666;
+    --accent-color: #2563eb;
+    --geometric-opacity: 0.04;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 100;
+}
+
+.theme-toggle:hover {
+    background: var(--accent-color);
+}

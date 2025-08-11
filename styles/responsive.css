@@ -1,0 +1,106 @@
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .theme-toggle {
+        top: 20px;
+        right: 20px;
+    }
+    
+    .landing {
+        padding: 40px 20px;
+    }
+    
+    .intro-text {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .tags {
+        margin-bottom: 40px;
+    }
+    
+    .geometric-accent {
+        width: 100px;
+        height: 100px;
+        right: 5%;
+    }
+    
+    .content {
+        padding: 40px 20px;
+    }
+    
+    .writings {
+        padding: 40px 20px;
+    }
+    
+    .writing-post {
+        padding: 40px 20px;
+    }
+    
+    .category-tags {
+        gap: 15px;
+    }
+    
+    .content-nav {
+        gap: 20px;
+    }
+    
+    .company-list {
+        gap: 6px;
+    }
+    
+    .company-tag::after {
+        width: 250px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-text {
+        font-size: 18px;
+    }
+    
+    .read-more {
+        font-size: 16px;
+    }
+    
+    .tags {
+        font-size: 14px;
+    }
+    
+    .social-links {
+        gap: 20px;
+    }
+    
+    .social-links a {
+        font-size: 14px;
+    }
+    
+    .content-nav {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    
+    .nav-button {
+        font-size: 14px;
+    }
+    
+    .company-tag {
+        font-size: 13px;
+        padding: 5px 10px;
+    }
+    
+    .company-tag::after {
+        width: 200px;
+        font-size: 11px;
+        padding: 8px 12px;
+    }
+    
+    .section-title {
+        font-size: 18px;
+    }
+    
+    .geometric-accent {
+        width: 80px;
+        height: 80px;
+    }
+}
