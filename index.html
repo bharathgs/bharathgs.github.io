@@ -115,7 +115,7 @@
     <!-- Add marked.js for markdown parsing -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
     
-    <script src="js/theme.js"></script>
+    <!-- <script src="js/theme.js"></script>
     <script src="js/url-router.js"></script>
     <script src="js/navigation.js"></script>
     <script src="js/markdown-loader.js"></script>
@@ -123,6 +123,21 @@
     <script src="data/philosophy.js"></script>
     <script src="data/writings-metadata.js"></script>
     <script src="js/data-loader.js?v=2"></script>
+    <script src="js/main.js"></script> -->
+
+        <!-- Data scripts first -->
+    <script src="data/work.js"></script>
+    <script src="data/philosophy.js"></script>
+    <script src="data/writings-metadata.js"></script>
+
+    <!-- Then utility scripts -->
+    <script src="js/markdown-loader.js"></script>
+    <script src="js/data-loader.js?v=2"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/navigation.js"></script>
+
+    <!-- Finally router and main -->
+    <script src="js/url-router.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
