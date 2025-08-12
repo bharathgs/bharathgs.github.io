@@ -1,4 +1,4 @@
-// Dynamic Content Loader - Updated for Markdown Writings
+// Dynamic Content Loader - Resilient Version
 class ContentLoader {
     static loadWorkSection() {
         console.log('Loading work section...');
@@ -35,10 +35,14 @@ class ContentLoader {
             writingsContainer.innerHTML = window.writingsData.getListHTML();
             console.log('Writings list loaded successfully');
         } else {
-            console.error('Writings list loading failed:', {
-                writingsContainerExists: !!writingsContainer,
-                writingsDataExists: !!window.writingsData
-            });
+            console.warn('Writings list loading failed - writingsData not available');
+            if (writingsContainer) {
+                writingsContainer.innerHTML = `
+                    <div class="no-writings">
+                        <p>Writings section temporarily unavailable. Check back soon!</p>
+                    </div>
+                `;
+            }
         }
     }
 
@@ -46,7 +50,6 @@ class ContentLoader {
         console.log('Initializing writing posts container...');
         const postsContainer = document.getElementById('writing-posts-container');
         if (postsContainer) {
-            // Just ensure the container exists - posts are loaded dynamically via markdown-loader.js
             postsContainer.innerHTML = '';
             console.log('Writing posts container initialized');
         } else {
@@ -55,26 +58,48 @@ class ContentLoader {
     }
 
     static initializeContent() {
-        console.log('Initializing all content...');
+        console.log('Initializing content with available data...');
         
-        // Load all sections
-        this.loadWorkSection();
-        this.loadPhilosophySection();
+        // Load sections that have data available
+        if (window.workData) {
+            this.loadWorkSection();
+        } else {
+            console.warn('workData not available');
+        }
+        
+        if (window.philosophyData) {
+            this.loadPhilosophySection();
+        } else {
+            console.warn('philosophyData not available');
+        }
+        
+        // Always initialize writings container, even if no data
         this.loadWritingsList();
         this.loadWritingPosts();
         
-        console.log('Content initialization complete');
+        console.log('Content initialization complete with available data');
     }
 
-    static checkDataAvailability() {
+    static checkCoreDataAvailability() {
+        // Only check for essential data - work and philosophy
+        const checks = {
+            workData: !!window.workData,
+            philosophyData: !!window.philosophyData
+        };
+        
+        console.log('Core data availability check:', checks);
+        return Object.values(checks).every(Boolean);
+    }
+
+    static checkAllDataAvailability() {
+        // Check all data including writings
         const checks = {
             workData: !!window.workData,
             philosophyData: !!window.philosophyData,
-            writingsData: !!window.writingsData,
-            marked: !!window.marked
+            writingsData: !!window.writingsData
         };
         
-        console.log('Data availability check:', checks);
+        console.log('All data availability check:', checks);
         return Object.values(checks).every(Boolean);
     }
 }
@@ -82,26 +107,31 @@ class ContentLoader {
 // Make ContentLoader available globally
 window.ContentLoader = ContentLoader;
 
-// Try to initialize content when all data is loaded
+// Initialize content when core data is available
 function waitForDataAndInitialize() {
     let attempts = 0;
-    const maxAttempts = 50; // 5 seconds max wait
+    const maxAttempts = 30; // 3 seconds for core data
     
     const checkInterval = setInterval(() => {
         attempts++;
         
-        if (ContentLoader.checkDataAvailability()) {
-            console.log('All data available, initializing content...');
+        // Load content if core data is available
+        if (ContentLoader.checkCoreDataAvailability()) {
+            console.log('Core data available, initializing content...');
             ContentLoader.initializeContent();
             clearInterval(checkInterval);
+            
+            // Continue checking for writings data in background
+            setTimeout(() => {
+                if (window.writingsData && document.getElementById('writings-list')) {
+                    console.log('Writings data became available, updating writings section...');
+                    ContentLoader.loadWritingsList();
+                }
+            }, 2000);
+            
         } else if (attempts >= maxAttempts) {
-            console.error('Timeout waiting for data to load. Check your script tags and file paths.');
-            console.log('Missing dependencies:', {
-                workData: !!window.workData,
-                philosophyData: !!window.philosophyData,
-                writingsData: !!window.writingsData,
-                marked: !!window.marked
-            });
+            console.warn('Timeout waiting for core data. Attempting partial initialization...');
+            ContentLoader.initializeContent(); // Try anyway
             clearInterval(checkInterval);
         }
     }, 100);
