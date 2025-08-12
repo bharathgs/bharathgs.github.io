@@ -120,59 +120,7 @@
     <script src="js/markdown-loader.js"></script>
     <script src="data/work.js"></script>
     <script src="data/philosophy.js"></script>
-<!--     <script src="writings/metadata.js"></script> -->
-    <script>
-// Writings metadata - inline version
-window.writingsData = {
-    writings: [
-        {
-            id: "space-between-thoughts",
-            title: "The Space Between Thoughts",
-            tags: ["meditation", "consciousness", "awareness"],
-            meta: "on meditation and the observer",
-            date: "2024-12-15",
-            file: "space-between-thoughts.md",
-            published: true,
-            featured: true
-        },
-        {
-            id: "building-ai-that-doesnt-suck",
-            title: "Building AI That Doesn't Suck",
-            tags: ["product engineering", "AI systems", "pragmatism"],
-            meta: "pragmatic thoughts on product engineering",
-            date: "2024-10-10",
-            file: "building-ai-that-doesnt-suck.md",
-            published: true,
-            featured: false
-        },
-        {
-            id: "playing-dumb",
-            title: "The Magic of Playing Dumb",
-            tags: ["product-management", "ai-development", "strategic-thinking"],
-            meta: "on the value of not knowing",
-            date: "2025-08-11",
-            file: "playing-dumb.md",
-            published: true, 
-            featured: true
-        }
-    ],
-    getPublished() {
-        return this.writings.filter(w => w.published);
-    },
-    getListHTML() {
-        const publishedWritings = this.getPublished();
-        return publishedWritings.map(writing => `
-            <div class="writing-item">
-                <a href="#" class="writing-link" onclick="loadWritingPost('${writing.id}')">${writing.title}</a>
-                <div class="writing-meta">${writing.meta}</div>
-                <div class="writing-tags">
-                    ${writing.tags.join(' • ')}
-                </div>
-            </div>
-        `).join('');
-    }
-};
-</script>
+    <script src="data/writings-metadata.js"></script>
     <script src="js/data-loader.js?v=2"></script>
     <script src="js/main.js"></script>
 </body>
