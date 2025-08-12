@@ -1,4 +1,4 @@
-// Dynamic Content Loader - Fixed Version
+// Dynamic Content Loader - Updated for Markdown Writings
 class ContentLoader {
     static loadWorkSection() {
         console.log('Loading work section...');
@@ -43,16 +43,14 @@ class ContentLoader {
     }
 
     static loadWritingPosts() {
-        console.log('Loading writing posts...');
+        console.log('Initializing writing posts container...');
         const postsContainer = document.getElementById('writing-posts-container');
-        if (postsContainer && window.writingsData) {
-            postsContainer.innerHTML = window.writingsData.getPostsHTML();
-            console.log('Writing posts loaded successfully');
+        if (postsContainer) {
+            // Just ensure the container exists - posts are loaded dynamically via markdown-loader.js
+            postsContainer.innerHTML = '';
+            console.log('Writing posts container initialized');
         } else {
-            console.error('Writing posts loading failed:', {
-                postsContainerExists: !!postsContainer,
-                writingsDataExists: !!window.writingsData
-            });
+            console.error('Writing posts container not found');
         }
     }
 
@@ -72,7 +70,8 @@ class ContentLoader {
         const checks = {
             workData: !!window.workData,
             philosophyData: !!window.philosophyData,
-            writingsData: !!window.writingsData
+            writingsData: !!window.writingsData,
+            marked: !!window.marked
         };
         
         console.log('Data availability check:', checks);
@@ -97,6 +96,12 @@ function waitForDataAndInitialize() {
             clearInterval(checkInterval);
         } else if (attempts >= maxAttempts) {
             console.error('Timeout waiting for data to load. Check your script tags and file paths.');
+            console.log('Missing dependencies:', {
+                workData: !!window.workData,
+                philosophyData: !!window.philosophyData,
+                writingsData: !!window.writingsData,
+                marked: !!window.marked
+            });
             clearInterval(checkInterval);
         }
     }, 100);

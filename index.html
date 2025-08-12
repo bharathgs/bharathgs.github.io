@@ -43,9 +43,9 @@
                 
                 <a href="#" class="read-more" onclick="showContent()">read more.</a>
                 
-                <!-- <div class="paragraph">
+                <div class="paragraph">
                     Sometimes I write. <a href="#" class="writings-link" onclick="showWritings()">writings</a>
-                </div> -->
+                </div>
             </div>
             
             <div class="social-links">
@@ -101,7 +101,7 @@
             </div>
             
             <div class="writings-content" id="writings-list">
-                <!-- Content will be loaded from data/writings.js -->
+                <!-- Content will be loaded from writings/metadata.js -->
             </div>
         </div>
     </div>
@@ -112,12 +112,16 @@
     </div>
 
     <!-- Scripts -->
+    <!-- Add marked.js for markdown parsing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
+    
     <script src="js/theme.js"></script>
     <script src="js/navigation.js"></script>
+    <script src="js/markdown-loader.js"></script>
     <script src="js/data-loader.js"></script>
     <script src="data/work.js"></script>
     <script src="data/philosophy.js"></script>
-    <script src="data/writings.js"></script>
+    <script src="writings/metadata.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
