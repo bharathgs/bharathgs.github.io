@@ -41,10 +41,10 @@
                     I'm also a <a href="https://web.archive.org/web/20241006184256/https://blog.robertsimoes.org/posts/four-wings-of-software-engineers/" target="_blank" class="inline-link">product engineer</a> building AI/LLM systems that help people create meaningful products.
                 </div>
                 
-                <a href="#" class="read-more" onclick="showContent()">read more.</a>
+                <a href="#" class="read-more" onclick="router.navigateToWork(); return false;">read more.</a>
                 
                 <div class="paragraph">
-                    Sometimes I write. <a href="#" class="writings-link" onclick="showWritings()">writings</a>
+                    Sometimes I write. <a href="#" class="writings-link" onclick="router.navigateToWritings(); return false;">writings</a>
                 </div>
             </div>
             
@@ -72,7 +72,7 @@
     <!-- Content Sections -->
     <div class="content" id="content">
         <div class="content-container">
-            <a href="#" class="back-link" onclick="showLanding()">← back</a>
+            <a href="#" class="back-link" onclick="router.navigateToHome(); return false;">← back</a>
             
             <div class="content-nav">
                 <button class="nav-button active" onclick="showWork()">work</button>
@@ -94,7 +94,7 @@
     <!-- Writings Page -->
     <div class="writings" id="writings">
         <div class="writings-container">
-            <a href="#" class="back-link" onclick="showLanding()">← back</a>
+            <a href="#" class="back-link" onclick="router.navigateToHome(); return false;">← back</a>
             
             <div class="writings-header">
                 <h1 class="writings-title">writings</h1>
@@ -116,6 +116,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
     
     <script src="js/theme.js"></script>
+    <script src="js/url-router.js"></script>
     <script src="js/navigation.js"></script>
     <script src="js/markdown-loader.js"></script>
     <script src="data/work.js"></script>

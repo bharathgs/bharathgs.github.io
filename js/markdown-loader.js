@@ -1,4 +1,4 @@
-// Markdown Loader for Writings
+// Fixed Markdown Loader with proper URL integration
 class MarkdownLoader {
     static async loadArticle(articleId) {
         const article = window.writingsData.writings.find(w => w.id === articleId);
@@ -48,7 +48,7 @@ class MarkdownLoader {
         return `
             <div class="writing-post active" id="${article.id}">
                 <div class="writings-container">
-                    <a href="#" class="back-link" onclick="showWritings()">← writings</a>
+                    <a href="#" class="back-link" onclick="router.navigateToWritings(); return false;">← writings</a>
                     
                     <div class="post-header">
                         <h1 class="post-title">${article.title}</h1>
@@ -83,7 +83,7 @@ class MarkdownLoader {
         return `
             <div class="writing-post active">
                 <div class="writings-container">
-                    <a href="#" class="back-link" onclick="showWritings()">← writings</a>
+                    <a href="#" class="back-link" onclick="router.navigateToWritings(); return false;">← writings</a>
                     <div class="loading-state">
                         <p>Loading article...</p>
                     </div>
@@ -93,39 +93,30 @@ class MarkdownLoader {
     }
 }
 
-// Global function for navigation - called from onclick handlers
+// UPDATED: Global function for navigation with proper URL handling
 async function loadWritingPost(articleId) {
-    try {
-        // Show loading state
-        const container = document.getElementById('writing-posts-container');
-        container.innerHTML = MarkdownLoader.showLoadingState();
-        
-        // Navigate to show the loading state
-        showWritingPost(articleId);
-        
-        // Load and render article
-        const article = await MarkdownLoader.loadArticle(articleId);
-        container.innerHTML = MarkdownLoader.renderArticle(article);
-        
-        // Scroll to top for better UX
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-        
-    } catch (error) {
-        console.error('Failed to load writing post:', error);
-        // Show error state
-        const container = document.getElementById('writing-posts-container');
-        container.innerHTML = `
-            <div class="writing-post active">
-                <div class="writings-container">
-                    <a href="#" class="back-link" onclick="showWritings()">← writings</a>
-                    <div class="error-state">
-                        <h2>Oops! Something went wrong</h2>
-                        <p>We couldn't load this article. Please try again later.</p>
-                        <button onclick="showWritings()" class="retry-button">← Back to writings</button>
-                    </div>
-                </div>
-            </div>
-        `;
+    console.log('📝 loadWritingPost called with:', articleId);
+    
+    // Use router to handle URL and navigation
+    if (window.router) {
+        window.router.navigateToArticle(articleId);
+    } else {
+        console.warn('Router not available, falling back to direct loading');
+        // Fallback to old method if router isn't available
+        try {
+            const container = document.getElementById('writing-posts-container');
+            container.innerHTML = MarkdownLoader.showLoadingState();
+            
+            showWritingPost(articleId);
+            
+            const article = await MarkdownLoader.loadArticle(articleId);
+            container.innerHTML = MarkdownLoader.renderArticle(article);
+            
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            
+        } catch (error) {
+            console.error('Failed to load writing post:', error);
+        }
     }
 }
 

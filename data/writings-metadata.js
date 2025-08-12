@@ -1,4 +1,4 @@
-// Writings Metadata
+// Fixed Writings Metadata with proper URL integration
 window.writingsData = {
     writings: [
         {
@@ -32,19 +32,56 @@ window.writingsData = {
             featured: true
         }
     ],
+
     getPublished() {
         return this.writings.filter(w => w.published);
     },
+
+    getByTag(tag) {
+        return this.writings.filter(w => 
+            w.published && w.tags.includes(tag)
+        );
+    },
+
+    getFeatured() {
+        return this.writings.filter(w => w.published && w.featured);
+    },
+
+    getAllTags() {
+        const allTags = this.getPublished().flatMap(w => w.tags);
+        return [...new Set(allTags)].sort();
+    },
+
+    // Generate HTML for writings list with proper event handling
     getListHTML() {
         const publishedWritings = this.getPublished();
+        
+        if (publishedWritings.length === 0) {
+            return `
+                <div class="no-writings">
+                    <p>No published writings yet. Check back soon!</p>
+                </div>
+            `;
+        }
+
         return publishedWritings.map(writing => `
             <div class="writing-item">
-                <a href="#" class="writing-link" onclick="loadWritingPost('${writing.id}')">${writing.title}</a>
+                <a href="#writings/${writing.id}" 
+                   class="writing-link" 
+                   onclick="loadWritingPost('${writing.id}'); return false;"
+                   data-article-id="${writing.id}">
+                   ${writing.title}
+                </a>
                 <div class="writing-meta">${writing.meta}</div>
                 <div class="writing-tags">
                     ${writing.tags.join(' • ')}
                 </div>
             </div>
         `).join('');
+    },
+
+    // For backward compatibility
+    getPostsHTML() {
+        return '';
     }
 };
