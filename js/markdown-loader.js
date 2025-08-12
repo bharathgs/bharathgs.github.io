@@ -8,7 +8,7 @@ class MarkdownLoader {
 
         try {
             // Fetch markdown file
-            const response = await fetch(`writings/articles/${article.file}`);
+            const response = await fetch(`data/articles/${article.file}`);
             if (!response.ok) {
                 throw new Error(`Failed to load ${article.file}: ${response.status}`);
             }
