@@ -30,7 +30,7 @@ window.writingsData = {
             file: "playing-dumb.md",
             published: true, 
             featured: true
-        },
+        }
     ],
 
     // Utility methods
