@@ -1,16 +1,14 @@
-// URL Routing System for Shareable Article URLs
+
 class URLRouter {
     constructor() {
         this.setupRouting();
     }
 
     setupRouting() {
-        // Handle back/forward browser navigation
         window.addEventListener('popstate', (event) => {
             this.handleRouteChange(false); // false = don't update browser history
         });
 
-        // Handle initial page load
         this.handleRouteChange(false);
     }
 
@@ -37,14 +35,11 @@ class URLRouter {
 
     updateURL(path) {
         const newURL = window.location.origin + window.location.pathname + '#' + path;
-        console.log('🌐 Updating URL to:', newURL);
         history.pushState({ path }, '', newURL);
     }
 
     handleRouteChange(updateHistory = true) {
         const route = this.getCurrentRoute();
-        
-        console.log('🧭 Routing to:', route);
 
         switch (route.type) {
             case 'home':
@@ -67,7 +62,6 @@ class URLRouter {
         }
     }
 
-    // Navigation methods
     navigateToHome() {
         this.updateURL('');
         this.showLanding();
@@ -89,7 +83,6 @@ class URLRouter {
     }
 
     navigateToArticle(articleId) {
-        console.log('🔗 Navigating to article:', articleId);
         this.updateURL(`writings/${articleId}`);
         this.showArticle(articleId);
     }
@@ -109,7 +102,6 @@ class URLRouter {
         document.getElementById('writings').classList.remove('active');
         this.hideAllWritingPosts();
         
-        // Set work tab as active
         document.getElementById('work-section').style.display = 'block';
         document.getElementById('philosophy-section').style.display = 'none';
         this.updateNavButtons(0);
@@ -122,7 +114,6 @@ class URLRouter {
         document.getElementById('writings').classList.remove('active');
         this.hideAllWritingPosts();
         
-        // Set philosophy tab as active
         document.getElementById('work-section').style.display = 'none';
         document.getElementById('philosophy-section').style.display = 'block';
         this.updateNavButtons(1);
@@ -142,18 +133,15 @@ class URLRouter {
         document.getElementById('content').classList.remove('active');
         document.getElementById('writings').classList.remove('active');
         
-        // Load and show the article
         await this.loadAndShowArticle(articleId);
         window.scrollTo(0, 0);
     }
 
     async loadAndShowArticle(articleId) {
         try {
-            // Show loading state
             const container = document.getElementById('writing-posts-container');
             container.innerHTML = this.getLoadingHTML();
             
-            // Load the article (using existing MarkdownLoader)
             if (window.MarkdownLoader) {
                 const article = await window.MarkdownLoader.loadArticle(articleId);
                 container.innerHTML = window.MarkdownLoader.renderArticle(article);
@@ -210,16 +198,13 @@ class URLRouter {
         `;
     }
 
-    // Helper method to generate shareable URLs
     getShareableURL(articleId) {
         return `${window.location.origin}${window.location.pathname}#writings/${articleId}`;
     }
 }
 
-// Initialize router
 const router = new URLRouter();
 
-// Update existing navigation functions to use router
 function showContent() {
     router.navigateToWork();
 }
@@ -239,13 +224,8 @@ function showWork() {
 function showPhilosophy() {
     router.navigateToPhilosophy();
 }
-
-// Updated function for loading writing posts with URL support
 async function loadWritingPost(articleId) {
     router.navigateToArticle(articleId);
 }
 
-// Make router globally available
 window.router = router;
-
-console.log('🎯 URL Routing system loaded');

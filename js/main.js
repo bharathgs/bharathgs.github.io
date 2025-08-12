@@ -1,16 +1,10 @@
-// Main Application Logic
+
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize the application
-    console.log('Website initialized successfully');
-    
-    // Add any additional initialization logic here
     initializeEventListeners();
 });
 
 function initializeEventListeners() {
-    // Add event listeners for any dynamic elements that might be added later
     document.addEventListener('click', function(e) {
-        // Handle dynamic navigation clicks
         if (e.target.classList.contains('writing-link')) {
             e.preventDefault();
         }
@@ -29,7 +23,7 @@ function initializeEventListeners() {
     });
 }
 
-// Global utility functions
+
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }

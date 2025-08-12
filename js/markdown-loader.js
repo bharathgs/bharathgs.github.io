@@ -1,4 +1,3 @@
-// Fixed Markdown Loader with proper URL integration
 class MarkdownLoader {
     static async loadArticle(articleId) {
         const article = window.writingsData.writings.find(w => w.id === articleId);
@@ -7,7 +6,6 @@ class MarkdownLoader {
         }
 
         try {
-            // Fetch markdown file
             const response = await fetch(`data/articles/${article.file}`);
             if (!response.ok) {
                 throw new Error(`Failed to load ${article.file}: ${response.status}`);
@@ -15,7 +13,6 @@ class MarkdownLoader {
             
             const markdown = await response.text();
             
-            // Configure marked for better output
             marked.setOptions({
                 breaks: true,
                 gfm: true,
@@ -23,7 +20,6 @@ class MarkdownLoader {
                 sanitize: false
             });
             
-            // Parse with marked.js
             const html = marked.parse(markdown);
             
             return {
@@ -93,16 +89,11 @@ class MarkdownLoader {
     }
 }
 
-// UPDATED: Global function for navigation with proper URL handling
 async function loadWritingPost(articleId) {
-    console.log('📝 loadWritingPost called with:', articleId);
-    
-    // Use router to handle URL and navigation
     if (window.router) {
         window.router.navigateToArticle(articleId);
     } else {
         console.warn('Router not available, falling back to direct loading');
-        // Fallback to old method if router isn't available
         try {
             const container = document.getElementById('writing-posts-container');
             container.innerHTML = MarkdownLoader.showLoadingState();
