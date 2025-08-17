@@ -2,11 +2,21 @@
 window.writingsData = {
     writings: [
         {
+            id: "manager-knowledge-unlocking",
+            title: "The Questions That Unlock Knowledge From Your Manager",
+            tags: ["engineering-career", "management-skills", "strategic-thinking"],
+            meta: "Four questions that turn surface-level one-on-ones into strategic learning sessions",
+            date: "2025-08-14",
+            file: "manager-knowledge-unlocking.md",
+            published: true,
+            featured: true
+        },
+        {
             id: "space-between-thoughts",
             title: "The Space Between Thoughts",
             tags: ["meditation", "consciousness", "awareness"],
             meta: "on meditation and the observer",
-            date: "2025-08-17",
+            date: "2025-08-07",
             file: "space-between-thoughts.md",
             published: true,
             featured: true
@@ -16,7 +26,7 @@ window.writingsData = {
             title: "The Magic of Playing Dumb",
             tags: ["product-management", "ai-development", "strategic-thinking"],
             meta: "on the value of not knowing",
-            date: "2025-08-10",
+            date: "2025-08-01",
             file: "playing-dumb.md",
             published: true, 
             featured: true

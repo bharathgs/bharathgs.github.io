@@ -61,6 +61,7 @@ See if you can catch that tiny gap (the space between one thought ending and the
 I can't promise you'll have some big revelation. But for me, just starting to notice this pattern has been... I don't know, liberating? Like discovering I've been wearing glasses I didn't need.
 
 Maybe you'll notice it too. Or maybe you'll find something completely different. Either way, I'm curious what's there when we stop assuming we are our thoughts and start paying attention to what's actually watching them.
+
 ---
 
 *What's there in the space between thoughts?*
