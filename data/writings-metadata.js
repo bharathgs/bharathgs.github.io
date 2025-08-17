@@ -6,27 +6,17 @@ window.writingsData = {
             title: "The Space Between Thoughts",
             tags: ["meditation", "consciousness", "awareness"],
             meta: "on meditation and the observer",
-            date: "2024-12-15",
+            date: "2025-08-17",
             file: "space-between-thoughts.md",
             published: true,
             featured: true
-        },
-        {
-            id: "building-ai-that-doesnt-suck",
-            title: "Building AI That Doesn't Suck",
-            tags: ["product engineering", "AI systems", "pragmatism"],
-            meta: "pragmatic thoughts on product engineering",
-            date: "2024-10-10",
-            file: "building-ai-that-doesnt-suck.md",
-            published: true,
-            featured: false
         },
         {
             id: "playing-dumb",
             title: "The Magic of Playing Dumb",
             tags: ["product-management", "ai-development", "strategic-thinking"],
             meta: "on the value of not knowing",
-            date: "2025-08-11",
+            date: "2025-08-10",
             file: "playing-dumb.md",
             published: true, 
             featured: true
