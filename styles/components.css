@@ -182,27 +182,6 @@
     border-bottom-color: var(--accent-color);
 }
 
-.project-list {
-    list-style: none;
-    margin-bottom: 30px;
-}
-
-.project-list li {
-    margin-bottom: 12px;
-    font-size: 15px;
-}
-
-.project-list a {
-    color: var(--text-color);
-    text-decoration: none;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
-    transition: border-color 0.3s ease;
-}
-
-.project-list a:hover {
-    border-bottom-color: var(--accent-color);
-}
-
 .project-stats {
     color: var(--secondary-color);
     font-size: 13px;
@@ -351,50 +330,11 @@
     color: rgba(102, 102, 102, 0.7);
 }
 
-.writing-tag {
-    /* No special styling - just text with separators */
-}
-
 .writing-meta {
     color: var(--secondary-color);
     font-size: 14px;
     font-style: italic;
     margin-top: 5px;
-}
-
-.writing-categories {
-    margin-top: 60px;
-    padding-top: 30px;
-    border-top: 1px solid rgba(128, 128, 128, 0.2);
-}
-
-.category-title {
-    text-align: center;
-    color: var(--secondary-color);
-    margin-bottom: 20px;
-    font-size: 18px;
-}
-
-.category-tags {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.category-tag {
-    color: var(--secondary-color);
-    font-size: 14px;
-    cursor: pointer;
-    padding: 5px 10px;
-    border-radius: 15px;
-    transition: all 0.3s ease;
-}
-
-.category-tag:hover,
-.category-tag.active {
-    color: var(--text-color);
-    background: rgba(128, 128, 128, 0.1);
 }
 
 /* Writing post styles */
@@ -455,46 +395,6 @@
 }
 
 /* Additional styles for markdown articles - Add to styles/components.css */
-
-/* Loading and Error States */
-.loading-state {
-    text-align: center;
-    padding: 60px 20px;
-    color: var(--secondary-color);
-}
-
-.error-state {
-    text-align: center;
-    padding: 60px 20px;
-}
-
-.error-state h2 {
-    color: var(--text-color);
-    margin-bottom: 15px;
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.error-state p {
-    color: var(--secondary-color);
-    margin-bottom: 25px;
-}
-
-.retry-button {
-    background: var(--accent-color);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
-}
-
-.retry-button:hover {
-    background: var(--accent-color);
-    opacity: 0.9;
-}
 
 .error-message {
     background: rgba(255, 0, 0, 0.1);
@@ -627,11 +527,4 @@
     font-style: italic;
     margin-top: 3px;
     margin-bottom: 5px;
-}
-
-/* No writings state */
-.no-writings {
-    text-align: center;
-    padding: 40px 20px;
-    color: var(--secondary-color);
 }

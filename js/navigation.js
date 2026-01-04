@@ -62,22 +62,3 @@ function showPhilosophy() {
     document.querySelectorAll('.nav-button')[1].classList.add('active');
 }
 
-function debugElements() {
-    const elements = [
-        'landing',
-        'content', 
-        'writings',
-        'writing-posts-container',
-        'work-section',
-        'philosophy-section'
-    ];
-    
-    elements.forEach(id => {
-        const element = document.getElementById(id);
-    });
-}
-
-// Call debug on load to help troubleshoot
-if (typeof window !== 'undefined') {
-    window.debugElements = debugElements;
-}

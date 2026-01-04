@@ -50,15 +50,6 @@ class ContentLoader {
     }
 
     static initializeContent() {
-
-        if (window.workData) {
-            this.loadWorkSection();
-        } else {
-            console.error('Work section not found');
-        }
-    }
-
-    static initializeContent() {
         
         if (window.workData) {
             this.loadWorkSection();

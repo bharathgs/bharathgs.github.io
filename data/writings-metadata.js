@@ -46,22 +46,6 @@ window.writingsData = {
         return this.writings.filter(w => w.published);
     },
 
-    getByTag(tag) {
-        return this.writings.filter(w => 
-            w.published && w.tags.includes(tag)
-        );
-    },
-
-    getFeatured() {
-        return this.writings.filter(w => w.published && w.featured);
-    },
-
-    getAllTags() {
-        const allTags = this.getPublished().flatMap(w => w.tags);
-        return [...new Set(allTags)].sort();
-    },
-
-    // Generate HTML for writings list with proper event handling
     getListHTML() {
         const publishedWritings = this.getPublished();
         
@@ -87,10 +71,5 @@ window.writingsData = {
                 </div>
             </div>
         `).join('');
-    },
-
-    // For backward compatibility
-    getPostsHTML() {
-        return '';
     }
 };

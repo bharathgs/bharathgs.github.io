@@ -28,12 +28,6 @@ function initializeTheme() {
     document.documentElement.setAttribute('data-theme', themeToUse);
 }
 
-function resetToAutoTheme() {
-    localStorage.removeItem('theme');
-    localStorage.removeItem('theme-manual');
-    initializeTheme();
-}
-
 function setupAutoThemeUpdates() {
     const isManuallySet = localStorage.getItem('theme-manual') === 'true';
     
