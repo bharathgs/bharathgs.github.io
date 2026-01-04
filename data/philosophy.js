@@ -6,7 +6,7 @@ window.philosophyData = {
       content: [
         "I organize life around a simple agenda: Be healthy, build wealth, maintain relationships, do interesting work, and pursue deeper understanding.",
         "This isn't about choosing money over meaning—it's about creating conditions where you can pursue meaning without survival anxiety. Financial security enables exploration, and exploration leads to growth.",
-        "<strong>The Practice:</strong> Physical health through movement and recovery. Mental clarity through reduced noise and increased observation. Spiritual depth through consistent practice and study. Purposeful action through building and shipping work that matters.",
+        "<strong>The Practice:</strong> Physical health through consistent practice - walking, stretching, rest, clean diet done well. Mental clarity through reduced noise and increased observation. Spiritual depth through consistent practice and study. Purposeful action through building and shipping work that matters.",
         "The goal is moksha through understanding the nature of reality, while living fully and joyfully in the world."
       ]
     },
