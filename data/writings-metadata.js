@@ -1,5 +1,16 @@
 window.writingsData = {
     writings: [
+
+        {
+            id: "2025-lessons",
+            title: "What 2025 Taught Me",
+            tags: ["reflection", "health", "spirituality", "personal-growth"],
+            meta: "Hard earned lessons from the year of the snake.",
+            date: "2026-01-04",
+            file: "2025-reflections.md",
+            published: true,
+            featured: false
+        },
         {
             id: "problem-understanding",
             title: "Stop Solving Problems. Start Understanding Them.",
