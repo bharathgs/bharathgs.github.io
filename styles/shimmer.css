@@ -1,0 +1,42 @@
+/* Shimmer effect for Thinking Paper */
+.shimmer {
+    background: linear-gradient(
+        90deg,
+        currentColor 0%,
+        currentColor 40%,
+        rgba(255, 255, 255, 0.6) 50%,
+        currentColor 60%,
+        currentColor 100%
+    );
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 3s ease-in-out infinite;
+    display: inline-block;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Dark theme adjustment */
+[data-theme="dark"] .shimmer {
+    background: linear-gradient(
+        90deg,
+        currentColor 0%,
+        currentColor 40%,
+        rgba(255, 255, 255, 0.8) 50%,
+        currentColor 60%,
+        currentColor 100%
+    );
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

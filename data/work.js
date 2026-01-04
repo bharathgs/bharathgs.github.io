@@ -17,15 +17,15 @@ window.workData = {
             company: "<a href=\"https://betterup.com\" target=\"_blank\" class=\"company-link\">BetterUp</a>",
             role: "Senior ML Engineer • July 2021 – Present",
             description: "Building AI systems that power BetterUp’s coaching platform. Re-architected the matching engine and recommendation systems, driving $10M+ in optimization impact, record retention, and industry-leading conversion via AI-driven drip campaigns."
-        },
-        {
-            company: '<a href="https://sochwellbeing.com" target="_blank" class="company-link">Soch Wellbeing</a>',
-            role: "Co-founder • March 2023 – Present", 
-            description: "Co-founding Soch, an AI-driven journaling platform for self-understanding and intentional living. Leading product vision, UI/UX design, and building LLM-powered systems that deliver personalized insights and growth."
         }
     ],
 
     pastCompanies: [
+        {
+            name: "Soch Wellbeing",
+            tooltip: "Co-founded Soch (March 2023-September 2025), an AI-driven iOS journaling platform for self-understanding and intentional living. Lead product vision, UI/UX design, and built LLM-powered systems that deliver personalized insights and growth. "
+
+        }, 
         {
             name: "Elemendar",
             tooltip: "Cybersecurity AI platform used by UK's National Security Center. Built NLP pipelines for threat intelligence extraction."

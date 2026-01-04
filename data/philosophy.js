@@ -4,59 +4,67 @@ window.philosophyData = {
     {
       title: "Life Framework",
       content: [
-        "I organize life around three fundamental axes across six key domains:",
-        "<strong>The Three Axes:</strong> To Be (inner development, presence, who I'm becoming), To Do (actions, achievements, external impact), and To Know (understanding, learning, expanding my mental models of reality).",
-        "<strong>Six Life Domains:</strong> Health | Wealth | Work | Inner-work | Relationships | Others",
-        "This framework helps me evaluate any opportunity by asking: Does this serve my being, doing, or knowing? Am I neglecting any axis? Which domain needs attention?",
-        "<strong>Core Approach:</strong> Achieve financial security and freedom first, then use that freedom to pursue deeper understanding and liberation. This isn't about choosing money over meaning—it's about creating conditions where you can pursue meaning without survival anxiety.",
-        "<strong>Life Goals:</strong> Explore the nature of reality and pursue moksha (liberation), embrace diverse and meaningful experiences across all domains, and live joyfully while helping others do the same."
+        "I organize life around a simple agenda: Be healthy, build wealth, maintain relationships, do interesting work, and pursue deeper understanding.",
+        "This isn't about choosing money over meaning—it's about creating conditions where you can pursue meaning without survival anxiety. Financial security enables exploration, and exploration leads to growth.",
+        "<strong>The Practice:</strong> Physical health through movement and recovery. Mental clarity through reduced noise and increased observation. Spiritual depth through consistent practice and study. Purposeful action through building and shipping work that matters.",
+        "The goal is moksha through understanding the nature of reality, while living fully and joyfully in the world."
       ]
     },
     {
       title: "Core Values",
       content: [
-        "Seven values guide both my life and work decisions:",
-        "<strong>Autonomy</strong> — Acting from internal standards rather than external expectations. <strong>Growth</strong> — Continuous evolution through deliberate challenges. <strong>Mastery</strong> — Deep understanding and craftsmanship approach. <strong>Honesty</strong> — Direct communication and intellectual truth-seeking.",
-        "<strong>Impact</strong> — Meaningful results over busy work. <strong>Balance</strong> — Managing the three life axes sustainably. <strong>Freedom</strong> — Creating conditions for choice and exploration where financial security enables deeper pursuits."
-      ]
-    },
-    {
-      title: "How I Think & Work",
-      content: [
-        "I'm an analytical systems thinker who sees patterns and builds frameworks. I approach problems through deep exploration rather than surface-level solutions, always asking 'what's really happening here?' and 'how do the pieces fit together?'",
-        "<strong>Core Preferences:</strong> Direct feedback over diplomatic suggestions, effort vs impact evaluation, outcomes over outputs, 0-1 work environments, speed over perfection, process-driven approach, and high agency environments where I can act on judgment rather than wait for permission.",
-        "I can overthink and seek too much control. I'm actively working on balancing analysis with action, and embracing uncertainty as part of the creative process."
-      ]
-    },
-    {
-      title: "Work Philosophy",
-      content: [
-        "Work operates at three distinct levels: Goals Level (defining what should exist), Problems Level (identifying what needs solving), and Solutions Level (executing predefined approaches). Complexity correlates with value created and inversely with time to create that value. The level you operate at should align with recognition and growth you receive—misalignment here leads to frustration and undervaluation.",
-        "<strong>Operating Principles:</strong> Work in public and share ideas openly. Fight stagnation actively—when growth stops, plan your next move. Stay detached from outcomes while maintaining quality standards. Take recognition explicitly rather than waiting for it. I've learned that intrinsic motivation alone doesn't guarantee advancement.",
-        "I evaluate opportunities across four dimensions: Growth, Learning, Impact, and Finance. Time is limited, so the work should be worth the energy invested."
-      ]
-    },
-    {
-      title: "Building Philosophy", 
-      content: [
-        "Building is where philosophy meets reality. Every product decision reflects beliefs about human nature, value creation, and how change happens in the world.",
-        "<strong>Core Beliefs:</strong> Taste + Agency (aesthetic judgment with courage to act), User Wisdom vs User Voice (understanding what people need vs what they say), Conviction-Driven Development, and Systems Integration (design for how users integrate products into existing mental, social, and technical systems).",
-        "Every product exists across Business Layer (value creation), Product Layer (user experience), and Engineering Layer (technical implementation). Great building happens at intersections where business insight, user understanding, and technical possibility converge.",
-        "<strong>Current Focus:</strong> Products that change how people think, not just what they do. The constraint of making complex systems feel simple reveals the most interesting design challenges."
+        "The values that guide my decisions, often subconsciously, or deliberately when clarity is needed:",
+        "<strong>Agency & Action:</strong> Responsibility, Agency, Decisiveness, Control, Assertiveness",
+        "<strong>Truth & Clarity:</strong> Authenticity, Honesty, Truth, Wisdom, Knowledge, Realism", 
+        "<strong>Creating & Building:</strong> Creation, Simplicity, Beauty, Growth, Mastery",
+        "<strong>Inner Work:</strong> Balance, Calm, Acceptance, Health, Spirituality, Silence",
+        "<strong>Living Well:</strong> Freedom, Joy, Intensity, Wealth, Fairness, Trust, Security, Purpose"
       ]
     },
     {
       title: "Growth Philosophy",
       content: [
-        "Growth is a search for joy and understanding through deliberate challenge. It happens when we surface our limitations and generate energy to overcome them.",
-        "I regularly ask: 'What am I actively seeking right now?' If there's no clear answer, I know I'm in danger of stagnation. Higher demand creates higher energy supply.",
-        "Without the search we stagnate—entropy accelerates when you stop actively pursuing growth across the three axes of being, doing, and knowing."
+        "Life grows through challenges. Challenges surface limitations and generate the energy needed to overcome them. This creates a cycle: seek challenge, surface limitation, generate energy, grow, repeat.",
+        "The search itself matters. Without actively seeking growth, stagnation accelerates. Energy operates on supply and demand—higher demand creates higher supply.",
+        "<strong>The Practice:</strong> Seek real feedback that reveals blind spots. Increase surface area of luck through action. Exercise radical agency—act on your judgment rather than wait for permission.",
+        "Growth isn't comfortable, but the alternative—slow decay through comfort—is worse. The question I ask regularly: What am I actively seeking right now?"
+      ]
+    },
+    {
+      title: "Work Philosophy",
+      content: [
+        "Purposeful work unites intellect, craft, and connection. It's where ideas meet reality and abstraction becomes tangible.",
+        "<strong>Focus on Craft:</strong> Build things that are elegant, useful, and enduring. Let clarity and quality guide creation, not trends or noise.",
+        "<strong>Collaboration Matters:</strong> Work with interesting, capable people who challenge your perspective. Seek resonance in values and curiosity, not just complementary skills.",
+        "<strong>Action Over Abstraction:</strong> Translate insight into tangible form. Engage directly with the world through prototypes, conversations, data, and lived experience. Ship work, get feedback, iterate.",
+        "<strong>Impact as Measure:</strong> Choose projects that deepen understanding or solve real problems. Measure progress by contribution and coherence, not busyness or activity.",
+        "Maintain rhythm. Balance intensity with renewal. Protect time for solitude, learning, and deep work. Consume less, create more. Momentum generates energy and energy enables progress."
+      ]
+    },
+    {
+      title: "Operating Principles",
+      content: [
+        "These principles shape how I approach decisions, challenges, and daily life:",
+        "<strong>Self-Reliance:</strong> Look within for answers. Nobody cares more about your work than you do. Don't seek external validation or wait for rescue—face reality and work with what is.",
+        "<strong>Letting Go:</strong> Embrace uncertainty. Reduce expectations. Don't get attached to specific outcomes—attachment creates suffering. Focus on process and let results emerge.",
+        "<strong>Authenticity & Truth:</strong> Be direct and honest in communication. Stick to truth even when inconvenient. Be yourself rather than performing a role.",
+        "<strong>Conscious Living:</strong> Observe your own mind constantly. Most suffering is psychological, created by unconscious thought patterns rather than actual circumstances. Stop overthinking, start doing. Stop living in your head.",
+        "<strong>Balance:</strong> Life requires managing competing demands. Track what matters. Build wealth consciously. Maintain health proactively. Nurture relationships intentionally. None of these areas can be neglected indefinitely without cost."
+      ]
+    },
+    {
+      title: "On Suffering & Peace",
+      content: [
+        "Unhappiness and suffering are primarily psychological rather than circumstantial. The unconscious thought process—the constant mental chatter—creates suffering, not the actual situation.",
+        "The practice is to observe this process constantly. Notice when you're lost in thought, rumination, or stories about how things should be. Return to what is.",
+        "Peace comes from acceptance, not control. Stop trying to be perfect. Stop trying to fix people or situations. Reduce the need for everything to have meaning or purpose. Sometimes things just are.",
+        "This doesn't mean passive acceptance of everything—it means choosing your battles consciously and not creating internal suffering through resistance to reality."
       ]
     },
     { 
       title: "",
       content: [
-        "<em>This philosophy has evolved through both success and failure. It reflects where I am now, not where I'll always be.</em>"
+        "<em>This philosophy evolves through lived experience. It reflects current understanding, not fixed truth. I share it publicly as a stake in the ground—a way to clarify my own thinking and perhaps resonate with others on similar paths.</em>"
       ]
     }
   ],

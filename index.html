@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/themes.css">
     <link rel="stylesheet" href="styles/components.css">
     <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/shimmer.css">
 </head>
 
 <body>
@@ -34,14 +35,16 @@
                 </div>
 
                 <div class="paragraph">
-                    Through <a href="https://sochwellbeing.com" target="_blank" class="inline-link">soch</a>, the journaling platform I co-founded, I'm exploring how AI can support deeper self-understanding and intentional living.
+                    Previously, I co-founded soch, a journaling platform exploring how AI can support deeper self-understanding and intentional living.
+                </div>
+
+                <div class="paragraph">
+                    Currently, I'm working on <a href="https://maxentlabs.com/" target="_blank" class="inline-link"><span class="shimmer">Thinking Paper</span></a>—rethinking AI interfaces to support thinking <em>with</em> AI rather than <em>through</em> it. Unconstrained by conversational paradigms, it enables cognitive partnership through adaptive agents, bidirectional reasoning, and non-linear thought exploration.
                 </div>
                 
                 <div class="paragraph">
-                    I'm also a <a href="https://web.archive.org/web/20241006184256/https://blog.robertsimoes.org/posts/four-wings-of-software-engineers/" target="_blank" class="inline-link">product engineer</a> building AI/LLM systems that help people create meaningful products.
+                    I'm also a <a href="https://web.archive.org/web/20241006184256/https://blog.robertsimoes.org/posts/four-wings-of-software-engineers/" target="_blank" class="inline-link">product engineer</a> building AI/LLM systems that help people create meaningful products. <a href="#" class="read-more" onclick="router.navigateToWork(); return false;">read more.</a>
                 </div>
-                
-                <a href="#" class="read-more" onclick="router.navigateToWork(); return false;">read more.</a>
                 
                 <div class="paragraph">
                     Sometimes I write. <a href="#" class="writings-link" onclick="router.navigateToWritings(); return false;">writings</a>
@@ -49,23 +52,13 @@
             </div>
             
             <div class="social-links">
-                <a href="mailto:bgsmorph@gmail.com">email</a>
+                <a href="/cdn-cgi/l/email-protection#cba9acb8a6a4b9bba38baca6aaa2a7e5a8a4a6">email</a>
                 <a href="https://twitter.com/iambharathgs">twitter</a>
                 <a href="https://github.com/bharathgs">github</a>
                 <a href="https://www.linkedin.com/in/iambharathgs/">linkedin</a>
                 <a href="https://drive.google.com/file/d/15Ad87zFzHdcoXQPS1QubF1dIPP6ac22K/view?usp=sharing" target="_blank">resume</a>
                 <a href="https://maxentlabs.com/">maxentlabs</a>
             </div>
-        </div>
-        
-        <div class="geometric-accent">
-            <svg viewBox="0 0 160 160" fill="none" stroke="currentColor" stroke-width="0.8">
-                <polygon points="80,15 140,45 140,115 80,145 20,115 20,45" />
-                <line x1="80" y1="15" x2="80" y2="145" />
-                <line x1="20" y1="45" x2="140" y2="115" />
-                <line x1="20" y1="115" x2="140" y2="45" />
-                <circle cx="80" cy="80" r="25" />
-            </svg>
         </div>
     </div>
 
@@ -113,7 +106,7 @@
 
     <!-- Scripts -->
     <!-- Add marked.js for markdown parsing -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
 
     <!-- Data scripts first -->
     <script src="data/work.js"></script>
@@ -126,8 +119,7 @@
     <script src="js/theme.js"></script>
     <script src="js/navigation.js"></script>
 
-    <!-- Finally router and main -->
+    <!-- Finally router -->
     <script src="js/url-router.js"></script>
-    <script src="js/main.js"></script>
 </body>
 </html>
