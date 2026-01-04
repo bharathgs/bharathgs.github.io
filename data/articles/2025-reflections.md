@@ -10,7 +10,7 @@ I spent the first half of 2025 dealing with a health crisis that I didn't see co
 
 **Life happens. There's nothing certain.** I used to think I had some degree of control over outcomes. Do the work, get the results, right? Turns out control is mostly an illusion we tell ourselves to feel better. You can do everything "right" and still end up in situations you never planned for.
 
-**Reality shows you your aukat.** Everything else is fantasy. When things got real, I saw how much of my self-image was just... made up. Mental constructs about how spiritual I was, how disciplined, how together. Reality has a way of revealing what's actually there versus what you tell yourself.
+**Reality shows you your aukat.** Everything else is fantasy. When things got real, I saw how much of my self-image was just... made up. Mental constructs about how spiritual I was, how disciplined, and a lot of other made-up bs. Reality has a way of revealing what's actually there versus what you tell yourself.
 
 ## On Overthinking and Action
 
